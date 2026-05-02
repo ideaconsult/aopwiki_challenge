@@ -1,11 +1,15 @@
 # AOP Wiki KER Challenge: AI-Extracted XML Repository
 
-This repository contains structured XML representations of **Key Event Relationships (KERs)** related to oligodendrocyte differentiation and myelination. These files were developed as part of a challenge to demonstrate how AI-extracted biological data can be formalized into the AOP-XML standard and visualized for researchers.
+This repository hosts structured XML data for **Key Event Relationships (KERs)** related to oligodendrocyte differentiation and myelination. 
+
+**Note on Purpose:** The primary output of this project is the **machine-readable XML data** generated directly from scientific literature using Large Language Models (LLMs). The XSLT visualization is provided solely as a tool to facilitate human validation of the AI's extraction accuracy.
+
 
 ## 🏆 Challenge Outcome
 This work is a contribution to the project:
 **[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**
-Managed by the **European Commission's Joint Research Centre (JRC)** and **EURL ECVAM**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
+Managed by the **European Commission's Joint Research Centre (JRC)** and **SCAHT**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
+
 
 ## 🌐 Live Visualization
 The XML files in this repository are styled using XSLT to be human-readable. View the styled landing page here:
