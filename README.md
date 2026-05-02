@@ -1,1 +1,44 @@
-# aopwiki_challenge
+# AOP Wiki KER Challenge: AI-Extracted XML Repository
+
+This repository contains structured XML representations of **Key Event Relationships (KERs)** related to oligodendrocyte differentiation and myelination. These files were developed as part of a challenge to demonstrate how AI-extracted biological data can be formalized into the AOP-XML standard and visualized for researchers.
+
+## 🏆 Challenge Outcome
+This work is a contribution to the project:
+**[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**
+Managed by the **European Commission's Joint Research Centre (JRC)** and **EURL ECVAM**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
+
+## 🌐 Live Visualization
+The XML files in this repository are styled using XSLT to be human-readable. View the styled landing page here:
+**[https://ideaconsult.github.io/aopwiki_challenge/](https://ideaconsult.github.io/aopwiki_challenge/)**
+
+---
+
+## 🧬 Biological Context
+The repository focuses on a specific AOP segment concerning developmental neurotoxicity:
+
+1. **KER 1977 → 2116**: [Disruption of sodium channel gating kinetics] to [Decreased, oligodendrocyte differentiation].
+   - **Weight of Evidence**: Low-to-Moderate.
+   - **Key Insight**: Explores how altered neuronal firing patterns impact activity-dependent signaling required for OPC maturation.
+
+2. **KER 2116 → 2107**: [Decreased, oligodendrocyte differentiation] to [Hypomyelination].
+   - **Weight of Evidence**: High.
+   - **Key Insight**: A direct mechanistic link where the failure of OPCs to mature results in an obligatory reduction of CNS myelin.
+
+---
+
+## 🛠 Technical Implementation
+This project uses "Browser-Side Transformation" to display XML data:
+
+- **XML**: Validated against the `aop-xml` namespace (`http://www.aopkb.org/aop-xml`)[cite: 1, 2].
+- **XSLT (`ker.xsl`)**: A stylesheet that transforms raw XML into a clean, responsive HTML format with highlighted evidence levels and citations.
+- **GitHub Pages**: Used to host files as a web server, bypassing browser security restrictions for local XSL transformations.
+
+---
+
+## 🔗 Related Resources
+* **[AOPMapper](https://aop.adma.ai)**: Advanced mapping and visualization tool for Adverse Outcome Pathways.
+* **[AOP Wiki](https://aopwiki.org)**: The central repository for AOP knowledge.
+* **[EURL ECVAM](https://joint-research-centre.ec.europa.eu/index_en)**: EU Reference Laboratory for alternatives to animal testing.
+
+---
+*Created for the AOP Wiki KER Challenge (2026).*
