@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOP Wiki Challenge | KER Repository</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --link: #2980b9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .external-links {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        .external-links a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+        .ker-card {
+            border: 1px solid #e1e8ed;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .ker-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        .ker-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--accent);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .meta {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 0.95em;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            background: #e1f5fe;
+            color: #0288d1;
+            margin-right: 8px;
+            border: 1px solid #b3e5fc;
+        }
+        .badge a {
+            color: #0277bd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .badge a:hover {
+            text-decoration: underline;
+        }
+        footer a {
+            color: #7f8c8d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-  <h1>AOP Wiki Challenge</h1>
-  <ul>
-    <li><a href="xml/KER_KE1977_KE2116_v2.xml">KER: KE1977 to KE2116</a></li>
-    <li><a href="xml/KER_KE2116_KE2107_v2.xml">KER: KE2116 to KE2107</a></li>
-  </ul>
+
+<div class="container">
+    <h1>AOP Wiki KER Challenge</h1>
+    <p class="subtitle">AI-extracted Key Event Relationships XML</p>
+
+    <div class="external-links">
+        <a href="https://github.com/ideaconsult/aopwiki_challenge/xml" target="_blank">View GitHub Repo</a>
+        <span style="color: #ccc;">|</span>
+        <a href="https://aop.adma.ai" target="_blank">AOPMapper</a>
+    </div>
+
+    <!-- Relationship 1 -->
+    <div class="ker-card">
+        <a href="xml/KER_KE1977_KE2116_v2.xml" class="ker-title">
+            KER: Disruption of sodium channel gating kinetics &rarr; Decreased oligodendrocyte differentiation
+        </a>
+        <div class="meta">
+            <span class="badge">Upstream: <a href="https://aopwiki.org/events/1977" target="_blank">KE1977</a></span> 
+            <span class="badge">Downstream: <a href="https://aopwiki.org/events/2116" target="_blank">KE2116</a></span>
+            <span class="badge" style="background: #fff3e0; color: #e65100; border-color: #ffe0b2;">WoE: Low-to-Moderate</span>
+        </div>
+        <div class="description">
+            Explores how altered VGSC gating in neurons and OPCs impairs activity-dependent signalling required for maturation.
+        </div>
+    </div>
+
+    <!-- Relationship 2 -->
+    <div class="ker-card">
+        <a href="xml/KER_KE2116_KE2107_v2.xml" class="ker-title">
+            KER: Decreased oligodendrocyte differentiation &rarr; Hypomyelination
+        </a>
+        <div class="meta">
+            <span class="badge">Upstream: <a href="https://aopwiki.org/events/2116" target="_blank">KE2116</a></span> 
+            <span class="badge">Downstream: <a href="https://aopwiki.org/events/2107" target="_blank">KE2107</a></span>
+            <span class="badge" style="background: #e8f5e9; color: #1b5e20; border-color: #c8e6c9;">WoE: High</span>
+        </div>
+        <div class="description">
+            A direct mechanistic link where the failure of OPCs to mature results in an obligatory reduction of CNS myelin.
+        </div>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; font-size: 0.8em; color: #95a5a6;">
+        Built with XML, XSLT, and GitHub Pages. <br>
+        Source Code: <a href="https://github.com/ideaconsult/aopwiki_challenge" target="_blank">GitHub Repository</a>
+    </footer>
+</div>
+
 </body>
 </html>
