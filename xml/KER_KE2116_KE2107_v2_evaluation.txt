@@ -1,0 +1,27 @@
+KER: KE2116 → KE2107
+
+[Biological plausibility]
+✔ Direct mechanistic dependency
+Score: 0.95
+
+[Empirical support]
+✔ Strong genetic + rescue evidence
+⚠ Includes review articles
+Score: 0.85
+
+[Quantitative understanding]
+✔ Contains numeric estimates
+⚠ Based on cross-model inference
+Score: 0.7
+
+[Uncertainties]
+✔ Well described
+Score: 0.9
+
+[Critical flags]
+⚠ Mechanism mixing (cytotoxicity vs differentiation)
+⚠ Review articles in empirical section
+⚠ Over-strong wording ("axiomatic")
+
+--------------------------------
+Overall KER confidence: ~0.85

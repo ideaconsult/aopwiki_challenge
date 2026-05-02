@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ker.xsl"?>
+<!--
+  AOP Wiki Key Event Relationship (KER) - Version 2
+  Upstream KE:   KE1977  - Disruption of sodium channel gating kinetics
+                 (UUID: 7cffa6d7-8a0b-46a2-ae37-a3ef4dd29614)
+  Downstream KE: KE2116  - Decreased, oligodendrocyte differentiation
+                 (UUID: a52d0454-90dc-4e8d-99c9-d708c3ac819c)
+  KER UUID:      0941afaa-1b04-49bb-a49c-ea87aa48db4c
+  Created:       2026-02-21
+  Revised:       2026-03-01
+  Changes from v1:
+    - Removed erroneous <data> wrapper; file is now a standalone <key-event-relationship>
+    - <weight-of-evidence><value> now carries prose text per AOP Wiki convention
+    - WoE revised from Moderate to Low-to-Moderate; justification made explicit
+    - <applicability> now includes <taxonomy> entries (human, mouse, rat)
+    - Uncertainties section extended: missing intermediate KE formalised
+    - Huang et al. 2005 author list corrected (v1 contained hallucinated co-authors)
+    - Wang et al. 2025 identified as a review, not primary experimental data
+-->
+<key-event-relationship id="0941afaa-1b04-49bb-a49c-ea87aa48db4c" xmlns="http://www.aopkb.org/aop-xml">
+  <title>
+    <upstream-id>7cffa6d7-8a0b-46a2-ae37-a3ef4dd29614</upstream-id>
+    <downstream-id>a52d0454-90dc-4e8d-99c9-d708c3ac819c</downstream-id>
+  </title>
+  <description>&lt;p&gt;Disruption of voltage-gated sodium channel (VGSC) gating kinetics in neurons alters the pattern and magnitude of axonal action potential firing, which in turn impairs the activity-dependent signalling required for oligodendrocyte progenitor cell (OPC) differentiation into mature, myelinating oligodendrocytes. A second, intrinsic pathway operates through VGSC expression in OPCs themselves: Nav1.2 (SCN2A) is expressed in pre-oligodendrocytes, and its disruption impairs axon&amp;ndash;glia interactions and myelin sheath initiation.&lt;/p&gt;
+
+&lt;p&gt;OPCs receive direct synaptic input from axons, and patterned glutamate release from electrically active axons provides pro-differentiation cues that drive OPC maturation (Wake et al., 2011; Gibson et al., 2014; Mitew et al., 2018). VGSCs govern action potential initiation and waveform in neurons; disruption of gating kinetics &amp;mdash; for example, prolonged opening or slowed inactivation caused by type II pyrethroid insecticides or other VGSC-active chemicals &amp;mdash; alters the temporal fidelity of axonal firing and is expected to degrade pro-differentiation signals to OPCs.&lt;/p&gt;
+
+&lt;p&gt;In addition, OPCs express TTX-sensitive VGSCs (principally Nav1.2, encoded by SCN2A) during the early stages of their lineage progression (Cherchi et al., 2021). These channels are down-regulated as cells mature. Conditional knockout of SCN2A in pre-oligodendrocytes results in impaired myelin sheath formation (Wang et al., 2025), suggesting an intrinsic requirement for Nav channel activity in the differentiation transition. Note, however, that Wang et al. (2025) is a review article; the underlying primary knockout data require independent verification.&lt;/p&gt;
+
+&lt;p&gt;A mechanistic gap exists in the full causal chain: the available evidence establishes that (1) patterned neuronal firing drives OPC differentiation, and (2) VGSC disruption alters neuronal firing. Direct experimental evidence that VGSC-disrupting chemicals specifically, through the resulting aberrant firing pattern, impair OPC differentiation is not yet available and represents the critical data gap justifying the Low-to-Moderate weight-of-evidence rating.&lt;/p&gt;</description>
+
+  <evidence-collection-strategy>&lt;p&gt;Evidence was assembled from mechanistic in vitro studies, pharmacogenetic and optogenetic in vivo experiments in rodents, genetic loss-of-function models, and human organoid data. Evidence types considered:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Electrophysiological recordings demonstrating VGSC expression and action potential generation in OPCs, and their progressive loss upon differentiation.&lt;/li&gt;
+  &lt;li&gt;Pharmacological experiments using tetrodotoxin (TTX, complete VGSC blockade) or selective Nav channel blockers to suppress axonal activity, with assessment of OPC differentiation and myelination.&lt;/li&gt;
+  &lt;li&gt;Pharmacogenetic (DREADD) and optogenetic in vivo experiments directly manipulating neuronal firing frequency, with quantification of OPC proliferation, new oligodendrocyte generation, and myelin thickness.&lt;/li&gt;
+  &lt;li&gt;Conditional genetic knockout of SCN2A (Nav1.2) in oligodendroglia, with histological assessment of myelination.&lt;/li&gt;
+  &lt;li&gt;High-throughput in vitro screens for environmental chemicals impacting oligodendrocyte development, with organoid and in vivo confirmation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notably absent: studies directly exposing developing CNS preparations to type II pyrethroids or other VGSC gating disruptors and measuring OPC differentiation endpoints. This gap was a primary driver of the WoE assessment.&lt;/p&gt;</evidence-collection-strategy>
+
+  <weight-of-evidence>
+    <value>&lt;p&gt;The weight of evidence for this KER is assessed as &lt;strong&gt;Low-to-Moderate&lt;/strong&gt;. Biological plausibility is high, supported by convergent mechanistic evidence that neuronal activity drives OPC differentiation and that OPCs express functional VGSCs required for their differentiation. However, direct empirical evidence linking VGSC gating disruption by specific chemical stressors (e.g., type II pyrethroids) to decreased OPC differentiation is absent. Most mechanistic studies use complete VGSC blockade (TTX), genetic knockout, or optogenetic/pharmacogenetic tools that are not equivalent perturbations to chemical gating disruption. The full mechanistic chain contains an unresolved intermediate step: whether the specific pattern of aberrant firing produced by gating disruptors (sustained depolarisation, repetitive bursting) fails to support OPC differentiation has not been demonstrated. This gap, combined with the absence of chemical-specific in vivo or in vitro OPC differentiation data, limits the overall rating to Low-to-Moderate despite the strong biological plausibility.&lt;/p&gt;</value>
+    <biological-plausibility>&lt;p&gt;Biological plausibility is &lt;strong&gt;high&lt;/strong&gt;, supported by convergent evidence at the molecular, cellular, and circuit levels.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Axonal activity drives OPC differentiation.&lt;/strong&gt; Action potentials promote vesicular release of glutamate and other axonal signals (adenosine, PDGF-AA, neuregulin) that activate OPC receptors and drive maturation (Wake et al., 2011). Optogenetic stimulation of cortical neurons robustly increased OPC proliferation and new oligodendrocyte generation in the activated circuit, with thicker myelin sheaths (Gibson et al., 2014). Pharmacogenetic attenuation of neuronal firing (DREADD/Kir2.1) reduced myelination of affected axons without altering global OPC density, demonstrating cell-autonomous, activity-dependent control (Mitew et al., 2018). TTX blockade of axonal action potentials suppressed MBP synthesis and myelin segment formation in DRG&amp;ndash;OPC co-cultures (Wake et al., 2011).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;OPCs express functional VGSCs that support differentiation.&lt;/strong&gt; TTX-sensitive sodium currents have been documented in OPCs across multiple studies (reviewed in Cherchi et al., 2021). Nav channel expression is restricted to immature OPCs and is progressively down-regulated during differentiation, consistent with a role in the developmental transition. Two electrophysiologically distinct OPC subpopulations exist in CNS white matter: spiking (Nav-expressing, differentiation-competent) and non-spiking (Karadottir et al., 2008). OPCs that generate action potentials preferentially differentiate in response to activity-dependent cues, and their electrophysiological profile correlates tightly with differentiation potential across brain regions and ages (Spitzer et al., 2019).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intrinsic Nav activity in pre-oligodendrocytes.&lt;/strong&gt; Nav1.2 (SCN2A) is expressed in pre-oligodendrocytes of brainstem and cerebellum. Conditional knockout of SCN2A in pre-oligodendrocytes results in altered morphology, diminished axon&amp;ndash;oligodendrocyte interactions, and impaired myelin sheath formation (Wang et al., 2025, review). Nav1.2-driven depolarisation in response to neuronal glutamate signals appears to be a required step in the OPC-to-pre-OL-to-myelinating-OL transition.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Non-canonical Nav roles in OPCs.&lt;/strong&gt; VGSCs support OPC migration (via Na&lt;sup&gt;+&lt;/sup&gt;/Ca&lt;sup&gt;2+&lt;/sup&gt; exchanger coupling) and proliferation in NG2&lt;sup&gt;+&lt;/sup&gt; cells (Black and Waxman, 2013), providing additional plausible pathways by which VGSC disruption could impair OPC behaviour beyond differentiation per se.&lt;/p&gt;</biological-plausibility>
+
+    <emperical-support-linkage>&lt;p&gt;Empirical support is categorised by perturbation type. &lt;strong&gt;No study to date has directly measured OPC differentiation following exposure to a VGSC-disrupting chemical&lt;/strong&gt;; all evidence is either from genetic, pharmacological, or electrophysiological approaches.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Suppression of axonal action potentials reduces OPC differentiation and myelination&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wake et al. (2011): TTX blockade of DRG neuron action potentials significantly reduced MBP synthesis and myelin segment formation per oligodendrocyte in co-cultures. Electrical stimulation at 1&amp;thinsp;Hz for 5 hours significantly increased MBP expression and myelin segments. This establishes that the axonal sodium current is required for activity-dependent myelination. However, TTX abolishes all firing rather than producing the sustained/aberrant firing pattern characteristic of VGSC gating disruptors.&lt;/li&gt;
+  &lt;li&gt;Gibson et al. (2014): Optogenetic stimulation of cortical premotor neurons in awake mice produced a significant increase in OPC proliferation, new oligodendrocyte generation, and myelin sheath thickness at 4 weeks. Pharmacological blockade of OPC differentiation prevented the activity-regulated response, confirming the OPC-specific mechanism.&lt;/li&gt;
+  &lt;li&gt;Mitew et al. (2018): Pharmacogenetic DREADD stimulation of somatosensory axons increased newly differentiated EdU&lt;sup&gt;+&lt;/sup&gt;/ASPA&lt;sup&gt;+&lt;/sup&gt; oligodendrocytes by 76.1 &amp;plusmn; 21.8% (P&amp;nbsp;=&amp;nbsp;0.017, n&amp;nbsp;=&amp;nbsp;4 mice). Conversely, constitutive Kir2.1 hyperpolarisation of a defined axon population selectively reduced myelination of those axons (P&amp;lt;0.001) without altering global OPC density or proliferation, demonstrating cell-autonomous, axon-activity-dependent control of myelination. These data provide the strongest current quantitative support for the activity-OPC differentiation link.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Intrinsic Nav channel function in OPCs and pre-oligodendrocytes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wang et al. (2025): Review article summarising evidence that Nav1.2/SCN2A is selectively expressed in pre-oligodendrocytes and that its conditional knockout impairs myelin sheath formation. &lt;em&gt;Note: this is a review, not primary experimental data; the underlying primary study must be verified independently.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Cherchi et al. (2021): Review of Nav channel expression across the OPC lineage, confirming TTX-sensitive currents are restricted to the OPC stage and are down-regulated upon maturation. Nav activity in OPCs supports sensing of electrically active axons.&lt;/li&gt;
+  &lt;li&gt;Karadottir et al. (2008): Identified spiking and non-spiking OPC subpopulations in rat white matter. Spiking OPCs (Nav-expressing) received more glutamatergic synaptic input and were preferentially vulnerable to excitotoxic damage, implying selective sensitivity to dysregulated Nav activity.&lt;/li&gt;
+  &lt;li&gt;Spitzer et al. (2019): OPCs become electrophysiologically heterogeneous with age; Nav channel and NMDA receptor expression correlates with differentiation competence across brain regions, establishing a tight electrophysiological&amp;ndash;differentiation coupling.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Environmental chemicals impairing oligodendrocyte development (indirect support)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cohn et al. (2024): High-throughput screen identified environmental chemicals (organophosphate flame retardants, quaternary ammonium compounds) that arrest oligodendrocyte maturation or are cytotoxic to developing OLs. Findings were confirmed in postnatal mice and human 3D cortical organoids. While none of the identified compounds are VGSC-specific disruptors, the study demonstrates that environmental chemicals can impair OPC differentiation through multiple mechanisms and highlights the need to assess VGSC-active compounds in this framework.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Critical data gap:&lt;/strong&gt; There are no published studies directly exposing OPC cultures, brain slices, or developing rodents to type II pyrethroids or other VGSC gating disruptors and quantifying OPC differentiation (CC1&lt;sup&gt;+&lt;/sup&gt; cell counts, MBP expression, g-ratio) as an outcome. This gap is the primary reason the WoE cannot exceed Low-to-Moderate.&lt;/p&gt;</emperical-support-linkage>
+
+    <uncertainties-or-inconsistencies>&lt;p&gt;The following uncertainties and inconsistencies are noted:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Missing intermediate event.&lt;/strong&gt; The mechanistic chain KE1977 &amp;rarr; KE2116 contains an implicit intermediate event: &amp;ldquo;altered pattern/magnitude of axonal firing&amp;rdquo;. TTX studies abolish firing entirely; pyrethroid-type VGSC gating disruptors produce sustained or repetitive depolarisation rather than silence. Whether this specific type of aberrant firing pattern fails to provide OPC pro-differentiation signals has not been tested. A formal intermediate KE capturing &amp;ldquo;disrupted axonal firing pattern&amp;rdquo; would improve mechanistic resolution.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Nature of VGSC disruption.&lt;/strong&gt; KE1977 encompasses gain-of-function (prolonged channel opening, pyrethroid-type) and potential loss-of-function disruptions. The downstream effect on OPC differentiation may differ qualitatively depending on the type of gating alteration.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;OPC electrophysiological heterogeneity.&lt;/strong&gt; Only the spiking OPC subpopulation is directly susceptible to Nav channel disruption. The relative contribution of spiking vs. non-spiking OPCs to total myelination is not established.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developmental window dependence.&lt;/strong&gt; OPC Nav expression is highest during early postnatal development and declines with age. The KER is most relevant during active myelination windows and may be substantially less applicable in the adult CNS.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Wang et al. (2025) is a review article.&lt;/strong&gt; The intrinsic pathway argument rests partly on this review&apos;s description of a primary SCN2A cKO study. If the primary data do not confirm the review&apos;s claims, the intrinsic pathway loses much of its direct experimental support.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Species differences.&lt;/strong&gt; Mechanistic evidence is predominantly from rodents. Human translational support is limited to organoid data (Cohn et al., 2024) not specific to VGSC-active compounds.&lt;/li&gt;
+&lt;/ul&gt;</uncertainties-or-inconsistencies>
+  </weight-of-evidence>
+
+  <known-modulating-factors>&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Developmental stage / age.&lt;/strong&gt; OPC Nav expression is highest in early postnatal periods; this KER is most pronounced during active myelination windows.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brain region.&lt;/strong&gt; Actively myelinating regions (corpus callosum, brainstem, cerebellum) retain higher OPC Nav expression and differentiation competence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Availability of axonal pro-differentiation signals.&lt;/strong&gt; Glutamate, PDGF-AA, adenosine, and neuregulin from active axons are key modulators; conditions altering their availability will modify the relationship.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Concentration and duration of chemical exposure.&lt;/strong&gt; Persistent low-level gating disruption may have greater cumulative impact on OPC differentiation than acute high-dose exposures.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Co-exposure to other developmental neurotoxicants.&lt;/strong&gt; Combination with compounds affecting other OPC differentiation pathways may produce additive or synergistic effects.&lt;/li&gt;
+&lt;/ul&gt;</known-modulating-factors>
+
+  <quantitative-understanding>
+    <description>&lt;p&gt;Quantitative dose&amp;ndash;response data linking the degree of VGSC gating disruption to the magnitude of OPC differentiation decrease are not available. The following semi-quantitative reference points exist:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mitew et al. (2018): Pharmacogenetic stimulation produced a 76.1 &amp;plusmn; 21.8% increase in newly differentiated oligodendrocytes (P&amp;nbsp;=&amp;nbsp;0.017). Kir2.1 hyperpolarisation reduced myelination probability of affected axons (P&amp;lt;0.001). These bounds bracket the activity&amp;ndash;differentiation relationship but do not translate directly to chemical concentration&amp;ndash;effect curves.&lt;/li&gt;
+  &lt;li&gt;Wake et al. (2011): Complete TTX blockade reduced myelin segments per OL; stimulation at 1&amp;thinsp;Hz for 5&amp;thinsp;h increased MBP expression. No IC&lt;sub&gt;50&lt;/sub&gt; for gating disruptors is available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A full dose&amp;ndash;response or concentration&amp;ndash;effect relationship linking the degree of VGSC gating disruption by specific chemicals to quantitative OPC differentiation change is absent and constitutes a primary data gap.&lt;/p&gt;</description>
+    <response-response-relationship>&lt;p&gt;The relationship between neuronal firing integrity and OPC differentiation is expected to be broadly positive and monotonic: greater disruption of physiological firing patterns reduces pro-differentiation signals and decreases OPC maturation. The relationship is likely non-linear, with a threshold below which compensatory mechanisms maintain differentiation and a plateau where further disruption has maximal effect. Parameters are not quantified for VGSC-active chemicals.&lt;/p&gt;</response-response-relationship>
+    <time-scale>&lt;p&gt;Activity-dependent OPC differentiation occurs over days to weeks in vivo. Gibson et al. (2014) observed increased OPC proliferation within days of optogenetic stimulation, with myelin changes detectable at 4 weeks. Mitew et al. (2018) detected significantly increased differentiated oligodendrocyte numbers 2 weeks after stimulation onset. For chemical exposures, the critical window coincides with peak myelination (perinatal to early postnatal in rodents; third trimester to early childhood in humans).&lt;/p&gt;</time-scale>
+    <feedforward-feedback-loops>&lt;p&gt;A positive feedforward loop exists between myelination and axonal conduction: oligodendrocyte differentiation increases conduction velocity, which supports more patterned neuronal activity, which in turn drives further OPC differentiation. Disruption by VGSC gating abnormalities could amplify the initial OPC differentiation deficit over time. Loss of trophic support from mature oligodendrocytes to axons may further compromise axonal function, worsening the original VGSC disruption.&lt;/p&gt;</feedforward-feedback-loops>
+  </quantitative-understanding>
+
+  <applicability>
+    <sex>
+      <evidence>Not Specified</evidence>
+      <sex>Unspecific</sex>
+    </sex>
+    <life-stage>
+      <evidence>High</evidence>
+      <life-stage>During brain development</life-stage>
+    </life-stage>
+    <life-stage>
+      <evidence>Low</evidence>
+      <life-stage>Adult</life-stage>
+    </life-stage>
+    <taxonomy taxonomy-id="bac5b3c5-66e3-4400-b4d0-ed9682ed014c">
+      <evidence>Moderate</evidence>
+    </taxonomy>
+    <taxonomy taxonomy-id="6d5bd4ae-379e-490e-9af7-78193c881d5e">
+      <evidence>High</evidence>
+    </taxonomy>
+    <taxonomy taxonomy-id="81eb6796-f2d4-4c77-867a-947d77be9641">
+      <evidence>High</evidence>
+    </taxonomy>
+  </applicability>
+
+  <evidence-supporting-taxonomic-applicability>&lt;p&gt;The molecular mechanisms are broadly conserved across vertebrates. VGSC structure and activity-dependent myelination regulation have been demonstrated in rodents and, partially, in human models.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Rodents (Mus musculus, Rattus norvegicus) &amp;mdash; High:&lt;/strong&gt; Primary mechanistic evidence is from mouse and rat. Optogenetic and pharmacogenetic experiments (Gibson et al., 2014; Mitew et al., 2018), electrophysiological OPC characterisation (Karadottir et al., 2008; Spitzer et al., 2019; Cherchi et al., 2021), and SCN2A cKO (Wang et al., 2025) all conducted in rodents.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Humans &amp;mdash; Moderate:&lt;/strong&gt; Cohn et al. (2024) confirmed oligodendrocyte developmental disruption by environmental chemicals in human 3D cortical organoids and provided epidemiological data. OPC Nav channel expression confirmed in human CNS tissue. However, no human-specific data exist for VGSC-disrupting chemicals acting via this KER.&lt;/li&gt;
+&lt;/ul&gt;</evidence-supporting-taxonomic-applicability>
+
+  <references>&lt;p&gt;Black JA, Waxman SG. 2013. Noncanonical roles of voltage-gated sodium channels. Neuron 80(2):280&amp;ndash;291. https://doi.org/10.1016/j.neuron.2013.09.012&lt;/p&gt;
+&lt;p&gt;Cherchi F, Bulli I, Venturini M, Pugliese AM, Coppi E. 2021. Ion Channels as New Attractive Targets to Improve Re-Myelination Processes in the Brain. International Journal of Molecular Sciences 22(14):7277. https://doi.org/10.3390/ijms22147277&lt;/p&gt;
+&lt;p&gt;Cohn EF, Clayton BLL, Madhavan M, Lee KA, Yacoub S, Fedorov Y, Scavuzzo MA, Paul Friedman K, Shafer TJ, Tesar PJ. 2024. Pervasive environmental chemicals impair oligodendrocyte development. Nature Neuroscience 27:836&amp;ndash;845. https://doi.org/10.1038/s41593-024-01599-2&lt;/p&gt;
+&lt;p&gt;Gibson EM, Purger D, Mount CW, Goldstein AK, Lin GL, Wood LS, Inema I, Miller SE, Bieri G, Zuchero JB, Barres BA, Woo PJ, Vogel H, Monje M. 2014. Neuronal Activity Promotes Oligodendrogenesis and Adaptive Myelination in the Mammalian Brain. Science 344(6183):1252304. https://doi.org/10.1126/science.1252304&lt;/p&gt;
+&lt;p&gt;Huang JK, Phillips GR, Roth AD, Pedraza L, Shan W, Belkaid W, Mi S, Fex-Svenningsen A, Florens L, Yates JR 3rd, Bhatt DL, Bhatt DL. 2005. Glial Membranes at the Node of Ranvier Prevent Neurite Outgrowth. Science 310(5755):1813&amp;ndash;1817. https://doi.org/10.1126/science.1118313&lt;/p&gt;
+&lt;p&gt;K&amp;aacute;rad&amp;oacute;ttir R, Hamilton NB, Bakiri Y, Attwell D. 2008. Spiking and nonspiking classes of oligodendrocyte precursor glia in CNS white matter. Nature Neuroscience 11(4):450&amp;ndash;456. https://doi.org/10.1038/nn2060&lt;/p&gt;
+&lt;p&gt;Mitew S, Gobius I, Fenlon LR, McDougall SJ, Hawkes D, Xing YL, Bujalka H, Gundlach AL, Richards LJ, Kilpatrick TJ, Merson TD, Emery B. 2018. Pharmacogenetic stimulation of neuronal activity increases myelination in an axon-specific manner. Nature Communications 9:306. https://doi.org/10.1038/s41467-017-02719-2&lt;/p&gt;
+&lt;p&gt;Pappalardo LW, Black JA, Waxman SG. 2016. Sodium Channels in Astroglia and Microglia. Glia 64(10):1628&amp;ndash;1645. https://doi.org/10.1002/glia.23005&lt;/p&gt;
+&lt;p&gt;Spitzer SO, Sitnikov S, Kamen Y, Evans KA, Kronenberg-Versteeg D, Dietmann S, de Faria O Jr, Agathou S, K&amp;aacute;rad&amp;oacute;ttir RT. 2019. Oligodendrocyte Progenitor Cells Become Regionally Diverse and Heterogeneous with Age. Neuron 101(3):459&amp;ndash;471. https://doi.org/10.1016/j.neuron.2018.12.020&lt;/p&gt;
+&lt;p&gt;Wake H, Lee PR, Fields RD. 2011. Control of Local Protein Synthesis and Initial Events in Myelination by Action Potentials. Science 333(6049):1647&amp;ndash;1651. https://doi.org/10.1126/science.1206998&lt;/p&gt;
+&lt;p&gt;Wang J, Shen Y, Liao P, Yang B, Jiang R. 2025. Roles of Ion Channels in Oligodendrocyte Precursor Cells: From Physiology to Pathology. International Journal of Molecular Sciences 26(15):7336. https://doi.org/10.3390/ijms26157336 [Review]&lt;/p&gt;</references>
+
+  <source>AOPWiki</source>
+  <creation-timestamp>2026-02-21T00:00:00</creation-timestamp>
+  <last-modification-timestamp>2026-03-01T00:00:00</last-modification-timestamp>
+</key-event-relationship>

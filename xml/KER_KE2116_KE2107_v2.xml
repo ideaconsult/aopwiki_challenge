@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ker.xsl"?>
+<!--
+  AOP Wiki Key Event Relationship (KER) - Version 2
+  Upstream KE:   KE2116  - Decreased, oligodendrocyte differentiation
+                 (UUID: a52d0454-90dc-4e8d-99c9-d708c3ac819c)
+  Downstream KE: KE2107  - Hypomyelination
+                 (UUID: e0bd004a-e161-47ae-b3fc-ee41ed47f330)
+  KER UUID:      e07ec83a-0ffa-4340-acb3-311ed3b6e79d
+  Created:       2026-02-21
+  Revised:       2026-03-01
+  Changes from v1:
+    - Removed erroneous <data> wrapper; file is now a standalone <key-event-relationship>
+    - <weight-of-evidence><value> now carries prose text per AOP Wiki convention
+    - <applicability> now includes <taxonomy> entries (human, mouse, rat)
+    - Quantitative understanding: threshold estimate formalised with source attribution
+    - Uncertainties: dysmyelination vs hypomyelination distinction and compensation threshold
+      made more explicit; cytotoxicity vs differentiation block distinction added
+    - Huang et al. 2005 author list corrected (v1 contained hallucinated co-authors)
+-->
+<key-event-relationship id="e07ec83a-0ffa-4340-acb3-311ed3b6e79d" xmlns="http://www.aopkb.org/aop-xml">
+  <title>
+    <upstream-id>a52d0454-90dc-4e8d-99c9-d708c3ac819c</upstream-id>
+    <downstream-id>e0bd004a-e161-47ae-b3fc-ee41ed47f330</downstream-id>
+  </title>
+  <description>&lt;p&gt;Decreased differentiation of oligodendrocyte progenitor cells (OPCs) into mature, myelinating oligodendrocytes leads to hypomyelination &amp;mdash; a pathological reduction in the extent, thickness, or completeness of myelin sheaths in the central nervous system (CNS).&lt;/p&gt;
+
+&lt;p&gt;Oligodendrocytes are the sole source of CNS myelin. A mature oligodendrocyte synthesises the lipid-rich myelin membranes that are compacted and spirally wrapped around neuronal axons, providing electrical insulation that enables rapid saltatory conduction and conferring trophic and metabolic support to ensheathed axons (Emery, 2010). All aspects of the myelination programme &amp;mdash; including expression of structural myelin proteins (MBP, PLP1, MAG, MOG, CNPase), myelin lipid biosynthesis, and the physical process of axon-wrapping &amp;mdash; are executed exclusively by fully differentiated, postmitotic oligodendrocytes; OPCs and immature precursors cannot produce myelin (Emery, 2010; Xin et al., 2005).&lt;/p&gt;
+
+&lt;p&gt;The mechanistic link between decreased OPC differentiation and hypomyelination is therefore direct and obligatory: without sufficient mature oligodendrocytes, the myelin sheath cannot be produced or maintained at physiological levels. A reduction in mature oligodendrocyte number translates quantitatively into a reduction in the fraction of myelinated axons and/or in myelin sheath thickness (increased g-ratio). This relationship is supported by genetic models in which selective disruption of the OPC-to-mature-OL transition at multiple molecular nodes (transcription factors, signalling kinases, RNA-binding proteins, m6A epitranscriptomic regulators) invariably produces both a measurable deficit in mature oligodendrocyte numbers and a corresponding degree of hypomyelination (Stolt et al., 2002; Xin et al., 2005; Wahl et al., 2014; Bercury et al., 2014; Luo et al., 2014; Xu et al., 2020; Wu et al., 2019; Osipovitch et al., 2019).&lt;/p&gt;</description>
+
+  <evidence-collection-strategy>&lt;p&gt;Evidence was assembled from:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Conditional genetic knockout mouse models selectively ablating genes required for oligodendrocyte differentiation, with quantification of maturation stage (Olig2, PDGFRalpha, CC1/APC, Sox10, MBP, PLP immunohistochemistry) and myelination extent (electron microscopy g-ratio, myelin protein expression).&lt;/li&gt;
+  &lt;li&gt;Transplantation experiments using OPCs with defined genetic defects, assessing their capacity to myelinate host tissue.&lt;/li&gt;
+  &lt;li&gt;Human cell-based models (hESC-derived glial progenitors, 3D cortical organoids) confirming that differentiation failure causes hypomyelination in a human cellular context.&lt;/li&gt;
+  &lt;li&gt;High-throughput environmental chemical screens with in vivo and organoid validation.&lt;/li&gt;
+  &lt;li&gt;Review articles synthesising the molecular control of oligodendrocyte differentiation and its requirement for myelination.&lt;/li&gt;
+&lt;/ul&gt;</evidence-collection-strategy>
+
+  <weight-of-evidence>
+    <value>&lt;p&gt;The weight of evidence for this KER is assessed as &lt;strong&gt;High&lt;/strong&gt;. The relationship is near-axiomatic: myelination is a terminal function of the differentiated oligodendrocyte; OPCs cannot produce myelin under any known condition. Multiple independent lines of genetic evidence from different molecular nodes (Sox10, Olig1, mTOR/Raptor, Cdk5, METTL14, Prrc2a), human cell models, and environmental chemical data all confirm that impairing the OPC-to-mature-OL transition produces measurable CNS hypomyelination. Quantitative data from genetic models establish that reductions of approximately 30&amp;ndash;50% in mature oligodendrocyte number are associated with significant hypomyelination by electron microscopy and myelin protein assay, while smaller reductions may fall within compensatory thresholds that vary by brain region and developmental stage.&lt;/p&gt;</value>
+    <biological-plausibility>&lt;p&gt;The biological plausibility of this KER is &lt;strong&gt;very high&lt;/strong&gt;. Myelination is a terminal function of the differentiated oligodendrocyte and cannot be executed by undifferentiated precursors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Terminal coupling of differentiation to myelination.&lt;/strong&gt; The OPC-to-myelinating-OL transition proceeds through defined stages characterised by sequential induction of transcription factors (Nkx2.2, Sox10, Olig1, Olig2, MYRF/MRF) and structural myelin proteins (MBP, PLP1, MAG, MOG). These proteins are expressed only in terminally differentiated cells. Blocking terminal differentiation at any step therefore directly prevents myelin production (Emery, 2010; Stolt et al., 2002; Xin et al., 2005).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Transcription factor loss-of-function.&lt;/strong&gt; Sox10-deficient OPCs form normally but cannot express MBP, PLP, or other myelin genes; no compact myelin is generated in the CNS. Olig1-null mice show complete absence of major myelin gene expression and failure to produce multilamellar myelin membrane wrappings in the brain despite oligodendrocyte processes contacting axons, demonstrating that the differentiation block specifically &amp;mdash; not axon contact &amp;mdash; is the limiting step (Xin et al., 2005).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intracellular signalling cascades.&lt;/strong&gt; The PI3K/Akt/mTOR and Cdk5 pathways converge on the transcriptional machinery driving OPC differentiation. Oligodendrocyte-specific deletion of mTOR or its activating subunit Raptor causes reduced mature oligodendrocyte numbers and commensurate hypomyelination (Wahl et al., 2014; Bercury et al., 2014). Cdk5 conditional knockout in oligodendrocytes selectively reduces the OPC-to-mature-OL transition without affecting the total Olig2&lt;sup&gt;+&lt;/sup&gt; pool (Luo et al., 2014), confirming that the myelination deficit arises from arrested maturation rather than altered lineage specification.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Epitranscriptomic control.&lt;/strong&gt; m6A mRNA methylation machinery (METTL14, Prrc2a) controls stability and translation of differentiation-promoting mRNAs including Olig2. Conditional loss of METTL14 decreases mature oligodendrocyte numbers and causes CNS hypomyelination while OPC numbers remain normal, demonstrating that the myelination deficit arises specifically from impaired post-mitotic maturation (Xu et al., 2020). Prrc2a knockout destabilises Olig2 mRNA, impairs oligodendrocyte fate determination, and produces significant hypomyelination (Wu et al., 2019).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Human cell relevance.&lt;/strong&gt; In human glial progenitor cells (hGPCs) carrying mutant Huntingtin (mHTT), differentiation transcription factors (NKX2.2, OLIG2, SOX10, MYRF) are sharply downregulated. When mHTT hGPCs are transplanted into shiverer mice, the chimeras remain hypomyelinated; forced SOX10 and MYRF expression rescues myelination, demonstrating that the differentiation block is the proximate cause (Osipovitch et al., 2019). Environmental chemicals that arrest OL maturation cause hypomyelination in postnatal mice and human organoids (Cohn et al., 2024).&lt;/p&gt;</biological-plausibility>
+
+    <emperical-support-linkage>&lt;p&gt;The following studies provide direct empirical support, ordered by molecular perturbation type.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Transcription factor loss-of-function genetic models&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stolt et al. (2002): Sox10-null mice develop OPCs normally but show complete block in terminal differentiation; MBP and PLP expression are absent; no compact myelin is produced. Transplantation of Sox10-null neural stem cells into wild-type retinas produced zero myelination in 19 independent experiments (4 stem cell cultures), versus myelination in 82% of recipients with wild-type donor cells. Sox10-null cells also failed to rescue hypomyelination in shiverer host brains, directly demonstrating that the differentiation block is the proximate cause of hypomyelination.&lt;/li&gt;
+  &lt;li&gt;Xin et al. (2005): Olig1-null mice exhibit complete absence of major myelin gene expression (Mbp, Plp1, Mag) and fail to produce multilamellar myelin despite oligodendrocyte processes contacting axons. The differentiation block &amp;mdash; specifically the failure to advance beyond the axon-recognition stage into the myelination-competent stage &amp;mdash; is the cause of hypomyelination. Progressive axonal swelling and degeneration develop as downstream consequences.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2. mTOR signalling conditional knockouts&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wahl et al. (2014): Oligodendrocyte-specific mTOR deletion (CNP-Cre;mTOR cKO) reduced CC1&lt;sup&gt;+&lt;/sup&gt; mature oligodendrocyte numbers in the spinal cord at both PND14 and 8 weeks, with significantly increased g-ratios (p&amp;nbsp;&amp;le;&amp;nbsp;0.01, &amp;ge;200 axons/animal, n&amp;nbsp;=&amp;nbsp;3/group) and persistently reduced MBP expression (significantly reduced in all CNS regions at PND25). The myelination deficit persisted into adulthood in the spinal cord; partial recovery was observed in the corpus callosum, illustrating regional variation in compensatory capacity.&lt;/li&gt;
+  &lt;li&gt;Bercury et al. (2014): Raptor cKO (CNP-Cre;Raptor cKO) reduced all myelin protein RNAs to approximately 50% of control at P14 (p&amp;nbsp;&lt;&amp;nbsp;0.05 to p&amp;nbsp;&lt;&amp;nbsp;0.0001). MBP protein was barely detectable in the spinal cord at P29. Electron microscopy confirmed increased g-ratios at P14 and 2 months, with increased unmyelinated axons at P14. Dysmyelination of large-calibre axons (uncompacted myelin) was observed at P29 alongside quantitative hypomyelination, demonstrating that impaired differentiation can produce both reduced myelin amount and abnormal myelin structure depending on the stage at which the transition is arrested.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Cdk5 kinase conditional knockout&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Luo et al. (2014): CNP-Cre;Cdk5fl/fl mice showed significantly delayed remyelination following focal demyelination: CC1&lt;sup&gt;+&lt;/sup&gt; mature oligodendrocyte numbers in lesions were significantly reduced, while total Olig2&lt;sup&gt;+&lt;/sup&gt; lineage cell pools were increased, demonstrating that Cdk5 loss specifically impairs the OPC-to-mature-OL transition. MBP and PLP expression and total myelinated axon counts in lesion sites were correspondingly reduced. The Cdk5 cKO data are from a remyelination context; parameters may differ from developmental myelination.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Epitranscriptomic (m6A) regulators&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Xu et al. (2020): Conditional METTL14 inactivation (Olig2-Cre;Mettl14fl/fl) decreased mature oligodendrocyte numbers and produced CNS hypomyelination while OPC numbers remained normal. Post-mitotic oligodendrocyte maturation is the step impaired, not OPC production.&lt;/li&gt;
+  &lt;li&gt;Wu et al. (2019): Prrc2a knockout induced significant hypomyelination, decreased lifespan, and locomotor and cognitive defects. Oligodendroglial-specific deletion replicated the pan-neural phenotype, confirming cell-autonomous causation through Olig2 mRNA destabilisation and impaired fate determination.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Human cell models&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Osipovitch et al. (2019): mHTT hGPCs show broad downregulation of OL differentiation transcription factors by RNA-seq. Transplantation into shiverer mice produced significantly less myelination than control hGPC chimeras. Forced SOX10 and MYRF expression in mHTT hGPCs rescued myelination in chimeric mice, providing direct human-cell-based evidence that restoring differentiation competence is sufficient to restore myelination. This is the strongest possible causal design &amp;mdash; gain-of-function rescue.&lt;/li&gt;
+  &lt;li&gt;Cohn et al. (2024): Chemical screen identified organophosphate flame retardants (arrested maturation) and quaternary ammonium compounds (cytotoxic to developing OLs) as impairing oligodendrocyte development in vitro, in postnatal mice, and in human 3D cortical organoids. Both chemical classes produced insufficient myelination. Note that for quaternary ammonium compounds the mechanism is primarily cytotoxicity rather than a differentiation block; the downstream hypomyelination is the same outcome but the upstream event differs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;6. Review synthesis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Emery (2010): Comprehensive review of the molecular cascade controlling oligodendrocyte differentiation and myelination confirms that the differentiation programme is a prerequisite for myelination at every regulatory node examined.&lt;/li&gt;
+  &lt;li&gt;Perlman and Mar (2012): Clinical review of leukodystrophies documents that heritable defects in OL differentiation or myelin maintenance cause characteristic hypomyelination with progressive neurological decline, confirming the clinical relevance of this KER in humans.&lt;/li&gt;
+&lt;/ul&gt;</emperical-support-linkage>
+
+    <uncertainties-or-inconsistencies>&lt;p&gt;The overall scientific evidence is strong; the following uncertainties should nonetheless be noted:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Compensation threshold and regional variability.&lt;/strong&gt; Not every degree of reduced OPC differentiation produces detectable hypomyelination. Compensatory mechanisms (increased OPC proliferation, extended mature OL survival, adult OPC pool reactivation) can restore myelination below a threshold. mTOR and Raptor cKO studies showed partial recovery of myelin protein levels over time in corpus callosum but not spinal cord (Wahl et al., 2014; Bercury et al., 2014), illustrating that the threshold and slope of the differentiation&amp;ndash;myelination relationship vary by brain region. Semi-quantitative extrapolation from genetic models suggests that &amp;ge;30&amp;ndash;50% reduction in mature oligodendrocyte numbers is likely to exceed compensatory thresholds; smaller reductions may not be detectable by standard histological endpoints.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dysmyelination vs hypomyelination.&lt;/strong&gt; Some perturbations produce dysmyelination (abnormal myelin structure: uncompacted or disorganised lamellae) rather than pure hypomyelination (reduced amount of structurally normal myelin). Bercury et al. (2014) documented large-calibre axon dysmyelination alongside quantitative hypomyelination in Raptor cKO, suggesting that the stage of the differentiation arrest determines whether reduced amount, abnormal structure, or both result.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cytotoxicity vs differentiation block.&lt;/strong&gt; For environmental chemicals (e.g., quaternary ammonium compounds in Cohn et al., 2024), the mechanism may be cytotoxicity to developing oligodendrocytes rather than a block of differentiation per se. Both upstream mechanisms converge on reduced mature oligodendrocyte number and hypomyelination, but the distinction is important for KER assignment: cytotoxicity would be better captured by a separate upstream KE.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Remyelination vs developmental myelination.&lt;/strong&gt; Luo et al. (2014) evidence comes from a remyelination context, which is inherently less efficient than developmental myelination. Quantitative parameters may differ between the two processes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Species and model heterogeneity.&lt;/strong&gt; Primary quantitative data are from rodent genetic models. Human cell and organoid data (Osipovitch et al., 2019; Cohn et al., 2024) provide translational support but do not provide quantitative g-ratio or OL cell count data comparable to the rodent genetic studies.&lt;/li&gt;
+&lt;/ul&gt;</uncertainties-or-inconsistencies>
+  </weight-of-evidence>
+
+  <known-modulating-factors>&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Developmental stage.&lt;/strong&gt; Differentiation deficits have greatest impact during the primary myelination window (perinatal to early postnatal in rodents; third trimester to first years of life in humans). Compensatory capacity is higher in adults, but remyelination after injury will still be impaired.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brain region.&lt;/strong&gt; Spinal cord is most sensitive to mTOR-dependent disruptions (Wahl et al., 2014; Bercury et al., 2014). Corpus callosum and cortex show greater compensatory capacity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Severity and duration of differentiation deficit.&lt;/strong&gt; Transient or partial suppression may be compensated. Sustained blockade produces permanent hypomyelination, as seen in mTOR cKO animals where spinal cord deficits persisted to adulthood.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stage of differentiation arrest.&lt;/strong&gt; A block at the OPC stage produces more severe hypomyelination than a block at the pre-myelinating stage (partial myelin protein expression, incomplete wrapping).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Concurrent activity-dependent signals.&lt;/strong&gt; Neuronal activity (glutamatergic and other signals from active axons) promotes OPC differentiation. Co-occurrence of VGSC gating disruption (KE1977) alongside a primary differentiation block may additively worsen hypomyelination.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Differentiation-promoting growth factors.&lt;/strong&gt; PDGF-AA, neuregulin-1, IGF-1, and thyroid hormone modulate differentiation rate and thus the severity of hypomyelination arising from a given differentiation deficit.&lt;/li&gt;
+&lt;/ul&gt;</known-modulating-factors>
+
+  <quantitative-understanding>
+    <description>&lt;p&gt;The quantitative relationship between degree of OPC differentiation deficit and degree of hypomyelination is partially characterised from genetic models. Key data points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Threshold estimate (inferred from genetic models):&lt;/strong&gt; Reductions in mature oligodendrocyte numbers of approximately 30&amp;ndash;50% are consistently associated with significant hypomyelination (increased g-ratio, reduced myelin protein expression) in mTOR and Raptor cKO models (Wahl et al., 2014; Bercury et al., 2014). This threshold is inferred by extrapolation across models, not measured directly within a single graded experiment. Smaller reductions may fall within regional compensatory thresholds.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Raptor cKO (Bercury et al., 2014):&lt;/strong&gt; All myelin protein RNAs reduced to approximately 50% of control at P14 (p&amp;nbsp;&lt;&amp;nbsp;0.05 to p&amp;nbsp;&lt;&amp;nbsp;0.0001 by qPCR). Increased g-ratios at P14 and 2 months; increased unmyelinated axons at P14.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;mTOR cKO (Wahl et al., 2014):&lt;/strong&gt; Significantly increased g-ratios in spinal cord at PND14 and 8 weeks (p&amp;nbsp;&amp;le;&amp;nbsp;0.01, &amp;ge;200 axons/animal, n&amp;nbsp;=&amp;nbsp;3/group). MBP significantly reduced in all CNS regions at PND25. Deficit persisted to adulthood in spinal cord.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sox10-null transplants (Stolt et al., 2002):&lt;/strong&gt; Complete differentiation block: 0/19 transplants produced myelination; wild-type donor cells myelinated in 82% of recipients. Categorical evidence for the absolute requirement of differentiation competence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A dose&amp;ndash;response relationship linking degree of differentiation impairment to degree of hypomyelination for environmental chemical exposures has not been explicitly quantified. The genetic model data provide a semi-quantitative framework, but translation to chemical stressor scenarios requires further experimental work.&lt;/p&gt;</description>
+    <response-response-relationship>&lt;p&gt;The relationship between decreased OPC differentiation and hypomyelination is expected to be broadly monotonic: greater reductions in differentiation rate or extent produce greater degrees of hypomyelination. The relationship is non-linear due to threshold effects and compensatory mechanisms:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Below the compensation threshold, oligodendrogenesis and extended OL survival may maintain myelination within normal limits.&lt;/li&gt;
+  &lt;li&gt;Above the threshold, hypomyelination scales with the differentiation deficit, potentially plateauing once all available OPCs are arrested.&lt;/li&gt;
+  &lt;li&gt;The threshold and slope vary by brain region, developmental stage, and the nature of the molecular perturbation.&lt;/li&gt;
+&lt;/ul&gt;</response-response-relationship>
+    <time-scale>&lt;p&gt;CNS myelination is a protracted developmental process. In mice, the main wave of myelination occurs between approximately PND7&amp;ndash;21 in the spinal cord and slightly later in the brain. In humans, active myelination extends from the third trimester through early childhood into adolescence.&lt;/p&gt;
+&lt;p&gt;In conditional knockout models, deficits in mature oligodendrocyte number evident at PND14 translate into measurable hypomyelination (increased g-ratio, reduced MBP) at the same time points (Wahl et al., 2014). Hypomyelination may persist into adulthood if the differentiation deficit is not compensated. For chemical exposures acting during the critical myelination window, a lag of days to a few weeks between initiation of the differentiation deficit and onset of detectable hypomyelination is expected, reflecting the time OPCs require to complete the pre-myelinating stage and produce myelin.&lt;/p&gt;</time-scale>
+    <feedforward-feedback-loops>&lt;p&gt;Hypomyelination may itself further impair oligodendrocyte survival and differentiation through several mechanisms:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Trophic feedback.&lt;/strong&gt; Mature oligodendrocytes provide metabolic and trophic support to axons. Hypomyelination reduces this support, which may lead to axonal dysfunction or degeneration. Axonal degeneration in turn reduces activity-dependent pro-differentiation signals to remaining OPCs, further impairing differentiation and exacerbating hypomyelination (Xin et al., 2005 documented progressive axonal degeneration in Olig1-null hypomyelinated mice).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Inflammatory amplification.&lt;/strong&gt; Exposed axonal membrane may trigger microglial activation and release of cytokines inhibitory to OPC differentiation, potentially creating a self-amplifying cycle.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Node of Ranvier disruption.&lt;/strong&gt; Properly myelinated axons develop specialised nodes of Ranvier with concentrated Nav channels and paranodal junction proteins. In hypomyelinated CNS, nodes are absent or disrupted (Huang et al., 2005), which alters neuronal activity patterns and feedback signals to OPCs that depend on electrical activity for differentiation cues.&lt;/li&gt;
+&lt;/ul&gt;</feedforward-feedback-loops>
+  </quantitative-understanding>
+
+  <applicability>
+    <sex>
+      <evidence>Not Specified</evidence>
+      <sex>Unspecific</sex>
+    </sex>
+    <life-stage>
+      <evidence>High</evidence>
+      <life-stage>During brain development</life-stage>
+    </life-stage>
+    <life-stage>
+      <evidence>High</evidence>
+      <life-stage>Adult</life-stage>
+    </life-stage>
+    <taxonomy taxonomy-id="bac5b3c5-66e3-4400-b4d0-ed9682ed014c">
+      <evidence>High</evidence>
+    </taxonomy>
+    <taxonomy taxonomy-id="6d5bd4ae-379e-490e-9af7-78193c881d5e">
+      <evidence>High</evidence>
+    </taxonomy>
+    <taxonomy taxonomy-id="81eb6796-f2d4-4c77-867a-947d77be9641">
+      <evidence>High</evidence>
+    </taxonomy>
+  </applicability>
+
+  <evidence-supporting-taxonomic-applicability>&lt;p&gt;The causal relationship between oligodendrocyte differentiation and myelination is conserved across all vertebrates that possess myelinated axons. The transcription factor network (Olig1/2, Sox10, Nkx2.2, MYRF), signalling pathways (PI3K/Akt/mTOR, Cdk5), and post-transcriptional regulators (m6A methylation machinery) are broadly conserved from fish to mammals (Emery, 2010).&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Rodents (Mus musculus, Rattus norvegicus) &amp;mdash; High:&lt;/strong&gt; All primary genetic evidence (mTOR, Raptor, Cdk5, Sox10, Olig1, METTL14, Prrc2a conditional knockouts) is from mouse models. Each model uniformly produces CNS hypomyelination when the OPC-to-mature-OL transition is impaired.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Humans &amp;mdash; High:&lt;/strong&gt; Supported by: (1) hESC-derived GPC chimeric mouse models showing differentiation-deficient human cells produce hypomyelinated chimeras with rescue by SOX10/MYRF (Osipovitch et al., 2019); (2) human 3D cortical organoids confirming environmental chemical disruption of OL development (Cohn et al., 2024); (3) leukodystrophies (Pelizaeus-Merzbacher disease, Krabbe disease, metachromatic leukodystrophy) caused by genetic defects in OL differentiation or myelin maintenance producing characteristic hypomyelination in humans (Perlman and Mar, 2012); (4) Huntington&apos;s disease showing impaired glial progenitor differentiation and hypomyelination in post-mortem human brain tissue (Osipovitch et al., 2019).&lt;/li&gt;
+&lt;/ul&gt;</evidence-supporting-taxonomic-applicability>
+
+  <references>&lt;p&gt;Bercury KK, Dai J, Sachs HH, Ahrendsen JT, Wood TL, Macklin WB. 2014. Conditional Ablation of Raptor or Rictor Has Differential Impact on Oligodendrocyte Differentiation and CNS Myelination. Journal of Neuroscience 34(13):4466&amp;ndash;4480. https://doi.org/10.1523/JNEUROSCI.4314-13.2014&lt;/p&gt;
+&lt;p&gt;Cohn EF, Clayton BLL, Madhavan M, Lee KA, Yacoub S, Fedorov Y, Scavuzzo MA, Paul Friedman K, Shafer TJ, Tesar PJ. 2024. Pervasive environmental chemicals impair oligodendrocyte development. Nature Neuroscience 27:836&amp;ndash;845. https://doi.org/10.1038/s41593-024-01599-2&lt;/p&gt;
+&lt;p&gt;Emery B. 2010. Regulation of Oligodendrocyte Differentiation and Myelination. Science 330(6005):779&amp;ndash;782. https://doi.org/10.1126/science.1190927&lt;/p&gt;
+&lt;p&gt;Huang JK, Phillips GR, Roth AD, Pedraza L, Shan W, Belkaid W, Mi S, Fex-Svenningsen A, Florens L, Yates JR 3rd, Bhatt DL. 2005. Glial Membranes at the Node of Ranvier Prevent Neurite Outgrowth. Science 310(5755):1813&amp;ndash;1817. https://doi.org/10.1126/science.1118313&lt;/p&gt;
+&lt;p&gt;Luo F, Burke K, Kantor C, Miller RH, Yang Y. 2014. Cyclin-Dependent Kinase 5 Mediates Adult OPC Maturation and Myelin Repair through Modulation of Akt and GsK-3beta Signaling. Journal of Neuroscience 34(31):10415&amp;ndash;10429. https://doi.org/10.1523/JNEUROSCI.0710-14.2014&lt;/p&gt;
+&lt;p&gt;Osipovitch M, Asenjo Martinez A, Mariani JN, Cornwell A, Dhaliwal S, Zou L, Chandler-Militello D, Wang S, Li X, Benraiss SJ, Agate R, Lampp A, Benraiss A, Windrem MS, Goldman SA. 2019. Human ESC-Derived Chimeric Mouse Models of Huntington&apos;s Disease Reveal Cell-Intrinsic Defects in Glial Progenitor Cell Differentiation. Cell Stem Cell 24(1):107&amp;ndash;122. https://doi.org/10.1016/j.stem.2018.11.010&lt;/p&gt;
+&lt;p&gt;Perlman SJ, Mar S. 2012. Leukodystrophies. Advances in Experimental Medicine and Biology 724:154&amp;ndash;171. https://doi.org/10.1007/978-1-4614-0653-2_13&lt;/p&gt;
+&lt;p&gt;Stolt CC, Rehberg S, Ader M, Lommes P, Riethmacher D, Schachner M, Bartsch U, Wegner M. 2002. Terminal differentiation of myelin-forming oligodendrocytes depends on the transcription factor Sox10. Genes and Development 16(2):165&amp;ndash;170. https://doi.org/10.1101/gad.215802&lt;/p&gt;
+&lt;p&gt;Wahl SE, McLane LE, Bercury KK, Macklin WB, Wood TL. 2014. Mammalian Target of Rapamycin Promotes Oligodendrocyte Differentiation, Initiation and Extent of CNS Myelination. Journal of Neuroscience 34(13):4453&amp;ndash;4465. https://doi.org/10.1523/JNEUROSCI.4311-13.2014&lt;/p&gt;
+&lt;p&gt;Wu R, Li A, Sun B, Sun JG, Zhang J, Zhang T, Chen Y, Xiao Y, Gao Y, Zhang Q, Ma J, Yang X, Liao Y, Lai WY, Qi X, Wang S, Shu Y, Wang HL, Wang F, Yang YG, Yuan Z. 2019. A novel m6A reader Prrc2a controls oligodendroglial specification and myelination. Cell Research 29(1):23&amp;ndash;41. https://doi.org/10.1038/s41422-018-0113-8&lt;/p&gt;
+&lt;p&gt;Xin M, Yue T, Ma Z, Wu FF, Gow A, Lu QR. 2005. Myelinogenesis and Axonal Recognition by Oligodendrocytes in Brain Are Uncoupled in Olig1-Null Mice. Journal of Neuroscience 25(6):1354&amp;ndash;1365. https://doi.org/10.1523/JNEUROSCI.3034-04.2005&lt;/p&gt;
+&lt;p&gt;Xu H, Dzhashiashvili Y, Shah A, Kunjamma RB, Weng YL, Elbaz B, Fei Q, Jones JS, Li YI, Zhuang X, Ming GL, He C, Popko B. 2020. m6A mRNA Methylation Is Essential for Oligodendrocyte Maturation and CNS Myelination. Neuron 105(2):293&amp;ndash;309. https://doi.org/10.1016/j.neuron.2019.12.013&lt;/p&gt;</references>
+
+  <source>AOPWiki</source>
+  <creation-timestamp>2026-02-21T00:00:00</creation-timestamp>
+  <last-modification-timestamp>2026-03-01T00:00:00</last-modification-timestamp>
+</key-event-relationship>

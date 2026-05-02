@@ -1,0 +1,34 @@
+KER: KE1977 → KE2116
+
+Field validation:
+
+[Biological plausibility]
+✔ Mechanistically consistent
+⚠ Uses indirect pathway composition
+Score: 0.8
+
+[Empirical support]
+✔ Strong activity–OPC evidence
+⚠ No direct KE1-specific evidence
+⚠ Includes review articles
+Score: 0.55
+
+[Quantitative understanding]
+✔ Transparent limitations
+⚠ No KE-specific dose-response
+Score: 0.4
+
+[Uncertainties]
+✔ Explicit and detailed
+Score: 0.95
+
+[Internal consistency]
+✔ Coherent WoE justification
+Score: 0.9
+
+[Structural issues]
+⚠ Missing intermediate KE
+⚠ Reference inconsistency
+
+--------------------------------
+Overall KER confidence: ~0.65
