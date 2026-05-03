@@ -8,7 +8,7 @@ This repository hosts structured XML data for **Key Event Relationships (KERs)**
 ## 🏆 Challenge Outcome
 This work is a contribution to the project:
 **[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**
-Managed by the **European Commission's Joint Research Centre (JRC)** and **SCAHT**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
+Managed by the **European Commission's Joint Research Centre (JRC)** and **[SCAHT](https://www.scaht.org/en/)**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
 
 
 ## 🌐 Live Visualization
@@ -33,7 +33,7 @@ The repository focuses on a specific AOP segment concerning developmental neurot
 ## 🛠 Technical Implementation
 This project uses "Browser-Side Transformation" to display XML data:
 
-- **XML**: Validated against the `aop-xml` namespace (`http://www.aopkb.org/aop-xml`)[cite: 1, 2].
+- **XML**: Validated against the `aop-xml` namespace (`http://www.aopkb.org/aop-xml`).
 - **XSLT (`ker.xsl`)**: A stylesheet that transforms raw XML into a clean, responsive HTML format with highlighted evidence levels and citations.
 - **GitHub Pages**: Used to host files as a web server, bypassing browser security restrictions for local XSL transformations.
 
@@ -42,7 +42,7 @@ This project uses "Browser-Side Transformation" to display XML data:
 ## 🔗 Related Resources
 * **[AOPMapper](https://aop.adma.ai)**: Advanced mapping and visualization tool for Adverse Outcome Pathways.
 * **[AOP Wiki](https://aopwiki.org)**: The central repository for AOP knowledge.
-* **[EURL ECVAM](https://joint-research-centre.ec.europa.eu/index_en)**: EU Reference Laboratory for alternatives to animal testing.
+* **[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**: Boosting the Adverse Outcome Pathway Framework with AI.
 
 ---
 *Created for the AOP Wiki KER Challenge (2026).*
