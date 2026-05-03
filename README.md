@@ -7,7 +7,7 @@ This repository hosts structured XML data for **Key Event Relationships (KERs)**
 
 ## 🏆 Challenge Outcome
 This work is a contribution to the project:
-**[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**
+**[AI4AOP](https://tinyurl.com/bdhubmme)**
 Managed by the **European Commission's Joint Research Centre (JRC)** and **[SCAHT](https://www.scaht.org/en/)**, this initiative explores how artificial intelligence can accelerate the development and characterization of Adverse Outcome Pathways to support non-animal testing strategies.
 
 
@@ -42,7 +42,7 @@ This project uses "Browser-Side Transformation" to display XML data:
 ## 🔗 Related Resources
 * **[AOPMapper](https://aop.adma.ai)**: Advanced mapping and visualization tool for Adverse Outcome Pathways.
 * **[AOP Wiki](https://aopwiki.org)**: The central repository for AOP knowledge.
-* **[AI4AOP](https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/boosting-adverse-outcome-pathway-framework-ai_en)**: Boosting the Adverse Outcome Pathway Framework with AI.
+* **[AI4AOP](https://tinyurl.com/bdhubmme)**: Boosting the Adverse Outcome Pathway Framework with AI.
 
 ---
 *Created for the AOP Wiki KER Challenge (2026).*
