@@ -262,7 +262,7 @@ This AOP addresses a toxicologically distinct and well-characterised mechanism �
 
 ---
 
-## Comparison with Non-OECD Endorsed AOPs (Previous Report)
+## Comparison with Non-OECD Endorsed AOPs ([Previous Report](https://github.com/ideaconsult/aopwiki_challenge/blob/main/discussion/top10_non_oecd_aops.md))
 
 AOPs in this cohort are generally more advanced structurally than the non-endorsed AOPs identified in the prior report — particularly the four Under Review AOPs — reflecting that OECD review has already driven mechanistic consolidation. However, the non-endorsed pool contained AOPs with higher absolute KE counts (e.g., AOP200 with 20 KEs), indicating that greater breadth does not always accompany formal development status. The strongest candidates from both cohorts share common mechanistic hubs: oxidative stress, DNA damage, and thyroid hormone disruption — pointing to a high-value opportunity for integrated AOP network analysis across the two pools.
 
